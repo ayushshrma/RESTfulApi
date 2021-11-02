@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "266ee391-7ca0-4613-aebb-cb027b665202",
+		"name": "restapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api/movies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/movies",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/movies",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"title\": \"Parasite\",\r\n        \"image\": \"https://bit.ly/2Pzczlb\",\r\n        \"summary\": \"Parasite movie summary.\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/movies",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/movies/{{id}}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/movies/611bb5760cf9381c34fa0ad2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"movies",
+						"611bb5760cf9381c34fa0ad2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/movies/{{id}}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"title\": \"edited title Avengers: Endgame\",\r\n    \"image\": \"https://bit.ly/2Pzczlb\",\r\n    \"summary\": \"Adrift in space with no food or water, Tony Stark sends a message to Pepper Potts as his oxygen supply starts to dwindle. Meanwhile, the remaining Avengers -- Thor, Black Widow, Captain America, and Bruce Banner --must figure out a way to bring back their vanquished allies for an epic showdownwith Thanos -- the evil demigod who decimated the planet and the universe.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/movies/611bb5760cf9381c34fa0ad2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"movies",
+						"611bb5760cf9381c34fa0ad2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/movies/{{id}}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"title\": \"Edited The Lord of the Rings: The Fellowship of the Ring\",\r\n        \"image\": \"https://bit.ly/2tC1Lcg\",\r\n        \"summary\": \"A young hobbit, Frodo, who has found the One Ring that belongs to the Dark Lord Sauron, begins his journey with eight companions to Mount Doom, the only place where it can be destroyed.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/movies/611bb4cd0cf9381c34fa0ad0",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"movies",
+						"611bb4cd0cf9381c34fa0ad0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

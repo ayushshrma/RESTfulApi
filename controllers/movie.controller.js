@@ -20,7 +20,8 @@ exports.create = (req, res) => {
 //save movie to the database.
     movie.save()
     .then(data => {
-        res.json(data);
+        res.send(data);
+        res.send({message: "Movie save Successfully!!."});
     }).catch(err => {
         res.status(400).send({
             message: err
@@ -133,6 +134,4 @@ exports.delete = (req, res) => {
             message: "Could not delete movie with ID: "+ req.params.id
         });
     });
-
-
-};
+}

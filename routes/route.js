@@ -15,4 +15,6 @@ module.exports = (app) => {
 
     // delete movie
     app.delete('/api/movies/:id', movies.delete);
+
+
 };
